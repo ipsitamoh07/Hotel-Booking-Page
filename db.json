@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "abc",
+      "email": "abc@gmail.com",
+      "password": "123",
+      "contact": "8080808080808"
+    },
+    {
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "contact": "908080808008",
+      "id": 2
+    },
+    {
+      "username": "Shravan",
+      "email": "cst.21bctg94@silicon.ac.in",
+      "password": "123",
+      "contact": "845679",
+      "id": 4
+    },
+    {
+      "username": "xyz",
+      "email": "xyz@gmail.com",
+      "password": "abc123",
+      "contact": "8524613790",
+      "id": 5
+    }
+  ],
+  "booked": [
+    {
+      "billno": 1690475159676,
+      "name": "Shravan Kumar Patnaik",
+      "aadhar": "968467473563434",
+      "email": "admin@gmail.com",
+      "phoneno": "08018873049",
+      "checkIn": "2023-07-29",
+      "checkOut": "2023-08-01",
+      "roomtype": "premium",
+      "rooms": "2",
+      "price": "11198",
+      "numberOfNights": "3",
+      "bookid": "4",
+      "id": 7
+    },
+    {
+      "billno": 1690477286623,
+      "name": "abc(111)",
+      "aadhar": "9684677711111 11",
+      "email": "abc@gmail.com",
+      "phoneno": "000000000000",
+      "checkIn": "2023-07-22",
+      "checkOut": "2023-07-29",
+      "roomtype": "honeymoon",
+      "rooms": "2",
+      "price": "15198",
+      "numberOfNights": "7",
+      "bookid": "1",
+      "id": 11
+    },
+    {
+      "billno": 1690478291534,
+      "name": "admin",
+      "aadhar": "9684674735633563",
+      "email": "admin@gmail.com",
+      "phoneno": "000000000000",
+      "checkIn": "2023-07-29",
+      "checkOut": "2023-07-31",
+      "roomtype": "premium",
+      "rooms": "1",
+      "price": "5599",
+      "numberOfNights": "2",
+      "bookid": "2",
+      "id": 14
+    },
+    {
+      "billno": 1690484834894,
+      "name": "abc(123)",
+      "aadhar": "8732674613874618",
+      "email": "abc@gmail.com",
+      "phoneno": "1276736172836871",
+      "checkIn": "2023-07-29",
+      "checkOut": "2023-07-31",
+      "roomtype": "premium",
+      "rooms": "1",
+      "price": "5599",
+      "numberOfNights": "2",
+      "bookid": "4",
+      "id": 15
+    }
+  ]
+}

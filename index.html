@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BnB.com</title>
+  <script src="https://kit.fontawesome.com/3f0d53040b.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="photos/Location.png">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="index.html"><i class="fa-solid fa-location-dot" style="color: #025464;"></i> BnB</a>
+        </h1>
+        <ul>
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="bookings.html">Bookings</a></li>
+          <li><a href="finalabtus.html">About Us</a></li>
+          <li><a href="contactuspage.html">Contact Us</a></li>
+          <li><a href="signin.html"><i class="fa-regular fa-user"></i> Login</a></li>
+          <li><a href="" onclick="logout()"> <i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="fliter_container">
+    <div class="fliter">
+      <h1>Enjoy Excellence with <span><i class="fa-solid fa-location-dot" style="color: #025464;"></i></span> <b
+          style="color:#f8f1f1;">BnB</b></h1>
+      <div class="fliter_button">
+        <button class="fliter_btn" onclick="redirect()">Book Now!</button>
+      </div>
+    </div>
+  </section>
+  <br><br>
+  <div class="abtus">
+    <div class="abtus_des">
+      <h2>About Us</h2>
+      <p>BnB - A premium and spirited hospitality company catering to your needs of leisure travel, luxury stay and escapade activities. Established with the vision of empowering the ever blooming hospitality industry and providing an alluring holiday experience, BnB boasts of a team of hospitality professionals who have come together to redefine the meaning of luxury in all true sense.</p>
+      <p>To set a benchmark in travel and hospitality industry by providing world class luxury at a shoestring and affordable budget and emerge as one of the biggest achievers in giving customer satisfaction.</p>
+      <button onclick="abtus()">About Us</button>
+    </div>
+    <div class="abtus_img">
+      <img src="photos/istockphoto-503019528-612x612.jpg">
+    </div>
+  </div>
+  <section class="places">
+    <div class=" place_image">
+      <h1><b>Rooms nd Suites</b></h1>
+      <div class="explore_images">
+        <div class="item1">
+          <abbr title="Honeymoon Suite"><img class="grid_img" onclick="redirect()"
+              src="photos/hotel-j-p-international.jpg" style="width: 420px;height: 300px;"></abbr>
+          <div class="room">
+            <h2>Honeymoon Suite</h2>
+            <h3>Price:7599</h3><button onclick="redirect()">Book Now</button>
+          </div>
+        </div>
+        <div class="item2">
+          <abbr title="Premium Room"><img class="grid_img" onclick="redirect()"
+              src="photos/room01 (1).jpg" style="width: 420px;height: 300px;"></abbr>
+              <div class="room">
+              <h2>Premium Room</h2>
+              <h3>Price:5599</h3><button onclick="redirect()">Book Now</button>
+              </div>
+        </div>
+        <div class="item3">
+          <abbr title="Standard Room"><img class="grid_img" onclick="redirect()" src="photos/room01.jpg"
+              style="width: 420px;height: 300px;"></abbr>
+              <div class="room">
+              <h2>Standard Room</h2>
+              <h3>Price:2999</h3><button onclick="redirect()">Book Now</button>
+              </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <div class="bar">
+    <span class="bar_content">
+      Get Unbeatable Prices! Book Now with Promo Code BNBNEW25 for 25% Off.
+    </span>
+  </div>
+  <br><br>
+  <section class="india">
+    <div class=" india_image">
+      <h2><b>Gallery</b></h2><br>
+      <div class="india_images">
+        <div class="item6">
+          <abbr title="Premium Transport"><img class="grid_img" onclick="redirect()"
+              src="photos/lobby-3_standard.jpg" style="width: 312px;height: 215px;"></abbr>
+        </div>
+        <div class="item7">
+          <abbr title="Fine Dine"><img class="grid_img" onclick="redirect()"
+              src="photos/photo03.jpg"
+              style="width: 300px;height: 450px;"></abbr>
+        </div>
+        <div class="item8">
+          <abbr title="Swimming Pool"><img class="grid_img" onclick="redirect()" src="photos/327229428.jpg"
+              style="width: 312px;height: 215px;"></abbr>
+        </div>
+        <div class="item9">
+          <abbr title="Spa"><img class="grid_img" onclick="redirect()" src="photos/spa.jpg"
+              style="width: 312px;height: 215px;"></abbr>
+        </div>
+        <div class="item10">
+          <abbr title="Common Gym"><img class="grid_img" onclick="redirect()" src="photos/best-hotels-to-work-outevenhotel-1504048975.jpg"
+              style="width: 312px;height: 215px;"></abbr>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="review">
+    <h1 style="color: #025464;">Customer Review</h1>
+    <div class="reviews">
+      <div class="review1">
+        <div class="review_img">
+          <img src="photos/WhatsApp Image 2023-07-25 at 01.00.47.jpg">
+          <tag> Mohan</tag>
+          <tag>(Maharastra,India)</tag>
+        </div>
+        <div class="review_des">
+          <p>Everything was good.Food was delicious and the rooms were spacious and comfortable.I got such a great hotel
+            in cheap prices.</p>
+        </div>
+      </div>
+      <div class="review2">
+        <div class="review_img">
+          <img src="photos/WhatsApp Image 2023-07-25 at 01.01.49.jpg">
+          <tag>Naseem(Bihar,India)</tag>
+        </div>
+        <div class="review_des">
+          <p>Our stay was very pleasant.Taken Care of and Hospitality</p><br><br>
+        </div>
+      </div>
+      <div class="review2">
+        <div class="review_img">
+          <img src="photos/images.png">
+          <tag>Sharma(Delhi,India)</tag>
+        </div>
+        <div class="review_des">
+          <p>I loved my stay here.Will sure Recommend.</p><br><br>
+        </div>
+      </div>
+    </div><br>
+    <div class="review_btn">
+      <button id="reviewbtn">Read More Reviews</button><br><br>
+    </div>
+  </section>
+  <div class="location">
+    <div class="location_des">
+      <h2>We will be Wating <i class="fa-solid fa-location-dot" style="color:red;"></i></h2>
+    </div>
+    <div class="frame">
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.138569672815!2d85.81114779678954!3d20.29453070000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909d030000001%3A0xf13f3028066256da!2sBNB%20Land%20Consultancy%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1690273472211!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="youtube">
+      <iframe width="600" height="450" src="https://www.youtube.com/embed/CHrhZvT6kJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer_container container">
+      <div class="footer_logo">
+        <h1 class="logo"><a href="index.html"><i class="fa-solid fa-location-dot" style="color: #025464;"></i> BnB</a>
+        </h1>
+      </div>
+      <div class="link_lists">
+        <h3>Download</h3>
+        <ul>
+          <li><a href="https://play.google.com/apps?hl=en">Andriod App</a></li>
+          <li><a href="https://www.apple.com/app-store/">iOS App</a></li>
+          <li><a href="https://azure.microsoft.com/en-in/products/app-service/web/">Web App</a></li>
+          <li><a href="contactuspage.html">Company Policy</a></li>
+        </ul>
+      </div>
+      <div class="link_lists">
+        <h3>Help & Support</h3>
+        <ul>
+          <li><a href="finalabtus.html">FAQs</a></li>
+          <li><a href="finalabtus.html">About Us</a></li>
+          <li><a href="index.html">Privacy Policy</a></li>
+          <li><a href="index.html">Terms & Conditons</a></li>
+        </ul>
+      </div>
+      <div class="news_letter">
+        <h3>Support</h3>
+        <input type="email" style="border-radius: 5px;" placeholder="Enter your Email..."> <i class="fa-regular fa-envelope fa-xl"></i>
+        <h3>Follow Us</h3>
+        <div class="icon_container">
+          <div class="icon">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="icon">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="icon">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="icon">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>

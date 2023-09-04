@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Bnb</title>
+    <script src="https://kit.fontawesome.com/3f0d53040b.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="photos/Location.png">
+    <link rel="stylesheet" href="final about us.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                    <h1 class="logo"><a href="index.html"><i class="fa-solid fa-location-dot" style="color: #025464;"></i> BnB</a></h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="bookings.html">Bookings</a></li>
+                        <li><a class="current" href="finalabtus.html">About Us</a></li>
+                        <li><a href="contactuspage.html">Contact Us</a></li>
+                        <li><a href="signin.html"><i class="fa-regular fa-user"></i> Login</a></li>
+                        <li><a href="" onclick="logout()"> <i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                    </ul>
+                  </div>
+                </nav> 
+          </header>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="abt_container">
+              <div class="abtdes">
+                <h1>About Us</h1>
+                <p>Welcome to Bnb, your ideal destination for finding the perfect accommodations for your next trip.</p>
+                <p>At Bnb, we are passionate about travel and believe that every journey should be an unforgettable experience. Whether you are planning a family vacation, a business trip, or a romantic getaway, we have a wide selection of hotels to suit your needs and preferences.</p>
+                <p>Our mission is to make hotel booking simple, secure, and enjoyable. We strive to provide the best customer service and ensure that you find the best deals on hotels around the world.</p>
+                <p>Join us in our quest to create lasting memories through exceptional travel experiences. Book your next stay with Bnb today!</p>
+                
+              </div>
+            
+                <div class="abtimg">
+                  <img src="https://www.touristsecrets.com/wp-content/uploads/portal_files/styles/700x600/public/touristsecrets_site_posts/inline-images/2020-08/56fb5d06fa3b69949cfce5d974bb4867.jpg" alt="Beautiful Landscape">
+                </div>
+              </div>
+        </section>
+    </main>
+    <main>
+      <section class="faq">
+    <h1>Frequently Asked Questions</h1>
+
+    <h2>General Questions</h2>
+    <div class="faq-section">
+        <div class="question" onclick="toggleAnswer(1)">What is this website about?</div>
+        <div class="answer" id="answer1"><br>
+            This website is designed to provide information about various services provided by our Hotel BnB.
+        </div>
+
+        <div class="question" onclick="toggleAnswer(2)">How can I contact support?</div>
+        <div class="answer" id="answer2">
+            You can reach our support team by sending an email to support@example.com.
+        </div>
+    </div>
+
+    <h2>Technical Questions</h2>
+    <div class="faq-section">
+        <div class="question" onclick="toggleAnswer(3)">How do I reset my password?</div>
+        <div class="answer" id="answer3">
+            To reset your password, go to the login page and click on the "Forgot Password" link. Follow the instructions
+            to reset your password.
+        </div>
+
+        <div class="question" onclick="toggleAnswer(4)">Can I use this website on my mobile device?</div>
+        <div class="answer" id="answer4">
+            Yes, this website is responsive and can be used on various devices, including mobile phones and tablets.
+        </div>
+    </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_container container">
+        <div class="footer_logo">
+          <h1 class="logo"><a href="index.html"><i class="fa-solid fa-location-dot" style="color: #025464;"></i> BnB</a>
+          </h1>
+        </div>
+        <div class="link_lists">
+          <h3>Download</h3>
+          <ul>
+            <li><a href="https://play.google.com/apps?hl=en">Andriod App</a></li>
+            <li><a href="https://www.apple.com/app-store/">iOS App</a></li>
+            <li><a href="https://azure.microsoft.com/en-in/products/app-service/web/">Web App</a></li>
+            <li><a href="contactuspage.html">Company Policy</a></li>
+          </ul>
+        </div>
+        <div class="link_lists">
+          <h3>Help & Support</h3>
+          <ul>
+            <li><a href="finalabtus.html">FAQs</a></li>
+            <li><a href="finalabtus.html">About Us</a></li>
+            <li><a href="index.html">Privacy Policy</a></li>
+            <li><a href="index.html">Terms & Conditons</a></li>
+          </ul>
+        </div>
+        <div class="news_letter">
+          <h3>Support</h3>
+          <input type="email" style="border-radius: 5px;" placeholder="Enter your Email..."> <i class="fa-regular fa-envelope fa-xl"></i>
+          <h3>Follow Us</h3>
+          <div class="icon_container">
+            <div class="icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-insh3ram"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+<script>
+  function logout(){
+    const token=localStorage.getItem('token');
+    if(token){
+        localStorage.removeItem("token");
+        localStorage.removeItem("Booked");
+        alert("You Are Logged Out");
+        window.location.href="index.html";
+    }
+    else{
+        alert("Log In First");
+        window.location.href="index.html";
+    }
+} 
+
+function toggleAnswer(id) {
+            const answer = document.getElementById(`answer${id}`);
+            answer.style.display = answer.style.display === "none" ? "block" : "none";
+        }
+</script>
+</body>
+</html>

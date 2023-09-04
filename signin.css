@@ -1,0 +1,185 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: montserrat;
+    background:linear-gradient(0deg, white, #025464);
+    height: 100vh;
+}
+.center{
+    position: relative;
+    top: 33%;                                                                                              /*I changed it from 50% to 33%*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white ;
+    border-radius: 10px;
+    
+}
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-radius: 0 1px linear-gradient(0deg, white,#025464 );
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a{
+    color:#333;
+    text-decoration: none;
+  }
+/*Nav Bar*/
+#navbar{
+    background:#E57C23;
+    color:#fff;
+    overflow:auto;
+    position: sticky;
+  }
+  
+  #navbar a{
+    color:#fff
+  }
+  
+  #navbar h1{
+    float:left;
+    padding-top:20px;
+    padding-left: 20px;
+  }
+  
+  #navbar ul{
+    list-style:none;
+    float:right;
+  }
+  
+  #navbar ul li {
+  float:left;
+  }
+  
+  #navbar ul li a{
+    display:block;
+    padding:20px;
+    text-align: center;
+  }
+  
+  #navbar ul li a:hover,
+  #navbar ul li a.current{
+    background:#e8aa42;
+    color:#f8f1f1;
+  }
+
+  .blankcontainer{
+    min-height: 100px;
+  }
+
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.txt_field input{
+    width: 100%;
+    padding:0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s; 
+}
+.txt_field span::before{
+    content:'';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #E57C23;
+    transition: .5s;
+
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color:#E57C23;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+.pass:hover{
+    text-decoration: underline;
+    
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: linear-gradient(120deg,#E57C23,#E8AA42 );
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: 200;
+}
+input[type="submit"]{
+    border-color: #E57C23;
+    transition: .5s;
+}
+.link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #E8AA42;
+}
+.link a{
+    color: #E57C23;
+}
+footer {
+    background-color: #e8aa42;
+  }
+  .link_lists h3 {
+    margin-bottom: 10px;
+    color:#025454;
+  }
+  .link_lists ul {
+    list-style: none;
+  }
+  .link_lists ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .news_letter h3 {
+    margin-bottom: 10px;
+    color:#025454;
+  }
+  .news_letter input {
+    padding: 5px 40px;
+    margin-bottom: 10px;
+  }
+  .footer_container {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .icon_container {
+    display: flex;
+    gap: 15px;
+    font-size: 32px;
+  }

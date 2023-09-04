@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="./signup.css">
+  <script src="https://kit.fontawesome.com/3f0d53040b.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="photos/Location.png">
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+    <div class="container">
+            <h1 class="logo"><a href="index.html"><i class="fa-solid fa-location-dot" style="color: #025464;"></i> BnB</a></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="finalabtus.html">About Us</a></li>
+                <li><a href="contactuspage.html">Contact Us</a></li>
+                <li><a class="current" href="signup.html"><i class="fa-regular fa-user"></i> Login</a></li>
+                <li><a href="" onclick="logout()"> <i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+            </ul>
+          </div>
+        </nav> 
+</header>
+  <div style=" background-color: white; width: 500px; margin: 100px auto; padding: 20px; border: 1px solid #000000; border-radius: 20px;">
+    <h2 style="text-align: center;">Sign Up</h2>
+    <form style="display: flex; flex-direction: column;" id="signupForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" style="padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 3px;" required/>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" style="padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 3px;" required/>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" style="padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 3px;" required/>
+
+      <label for="contact">Contact:</label>
+      <input type="number" id="contact" name="contact" required style="padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 3px;">
+      <br><br>   
+      <button type="submit" value="Sign Up">SIGN UP</button>
+    </form>
+  </div>
+  <script src="signup.js"></script>
+  <footer>
+    <div class="footer_container container">
+      <div class="footer_logo">
+        <h1 class="logo"><a href="index.html"><i class="fa-solid fa-location-dot" style="color: #025464;"></i> BnB</a></h1>
+      </div>
+      <div class="link_lists">
+        <h3>Download</h3>
+        <ul>
+          <li><a href="https://play.google.com/apps?hl=en">Andriod App</a></li>
+          <li><a href="https://www.apple.com/app-store/">iOS App</a></li>
+          <li><a href="https://azure.microsoft.com/en-in/products/app-service/web/">Web App</a></li>
+          <li><a href="contactuspage.html">Company Policy</a></li>
+        </ul>
+      </div>
+      <div class="link_lists">
+        <h3>Help & Support</h3>
+        <ul>
+          <li><a href="finalabtus.html">FAQs</a></li>
+          <li><a href="final about us.css">About Us</a></li>
+          <li><a href="index.html">Privacy Policy</a></li>
+          <li><a href="index.html">Terms & Conditons</a></li>
+        </ul>
+      </div>
+      <div class="news_letter">
+        <h3>Support</h3>
+        <input type="email" style="border-radius: 5px;" placeholder="Enter your Email...">
+        <h3>Follow Us</h3>
+        <div class="icon_container">
+          <div class="icon">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="icon">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="icon">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="icon">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US </title>
+    <link rel="stylesheet" href="contactuspage.css">
+    <link rel="icon" href="photos/Location.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3f0d53040b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+        <div class="container">
+                <h1 class="logo"><a href="index.html"><i class="fa-solid fa-location-dot" style="color: #025464;"></i> BnB</a></h1>
+                <ul>
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                    <li><a href="finalabtus.html">About Us</a></li>
+                    <li><a class="current" href="contactuspage.html">Contact Us</a></li>
+                    <li><a  href="signin.html"><i class="fa-regular fa-user"></i> Login</a></li>
+                    <li><a href="" onclick="logout()"> <i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                </ul>
+              </div>
+            </nav> 
+      </header>
+      <div class="blankcontainer">
+        <p></p>
+      </div>
+    <div class="main">
+     <div class="mainContainer">
+        <div class="container">
+            <header>
+                <h1>Contact Us</h1>
+                <p>We would love to answer all your queries and help you. Please feel free to reach out to us</p>
+                <div class="blankcontainer">
+                    <p></p>
+                </div>
+            </header>
+        </div>
+        <div class="formContent">
+            <div class="address">
+                <section>
+                    <br></br>
+                    <h2><i class="fa-solid fa-location-dot"></i>Address:</h2>
+                    <p>
+                        Plot No- B, 1334,<br>
+                        Maitre Vihar Rd, Maitri Vihar, NALCO Nagar,<br>
+                        Chandrasekharpur, Bhubaneswar, <br>
+                        Odisha 751023<br>
+                    </p>
+                    <br></br>
+                </section>
+
+                <section>
+                    <h2><i class="fa-solid fa-phone"></i>For Reservations:</h2>
+                    <p>+91 9911701701<br></p>
+                    <br></br>
+                </section>
+
+                <section>
+                    <h2><i class="fa-solid fa-envelope"></i>Email ID:</h2>
+                    <p>reservations@bnbhotels.com<br></p>
+                </section>
+
+            </div>
+            <div class="formDetails">
+                <form method="post" onsubmit="success(event)">
+                    <div class="form">
+                            <div class="contact-form">
+                                <label>Full Name:</label>
+                                <span></span>
+                                <input type="text" required>
+                            </div>
+
+                            <div class="contact-form">
+                                
+                                <label>Email ID:</label>
+                                <span></span>
+                                <input type="text" required>
+                                
+                            </div>
+
+                            <div class="contact-form">
+                                <span>Type the message you want to send</span>
+                                <textarea name="text"></textarea>
+                            </div>
+
+                            <div class="contact-form">
+                                <input type="submit" value="Submit">
+                            </div>
+
+                        </div>
+                </form>
+                <div class="media">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-whatsapp"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="blankcontainer">
+    <p></p>
+  </div>
+  <footer>
+      <div class="footer_container container">
+        <div class="footer_logo">
+          <h1 class="logo"><a href="index.html"><i class="fa-solid fa-location-dot" style="color: #025464;"></i> BnB</a></h1>
+        </div>
+        <div class="link_lists">
+          <h3>Download</h3>
+          <ul>
+            <li><a href="https://play.google.com/apps?hl=en">Andriod App</a></li>
+            <li><a href="https://www.apple.com/app-store/">iOS App</a></li>
+            <li><a href="https://azure.microsoft.com/en-in/products/app-service/web/">Web App</a></li>
+            <li><a href="contactuspage.html">Company Policy</a></li>
+          </ul>
+        </div>
+        <div class="link_lists">
+          <h3>Help & Support</h3>
+          <ul>
+            <li><a href="finalabtus.html">FAQs</a></li>
+            <li><a href="finalabtus.html">About Us</a></li>
+            <li><a href="index.html">Privacy Policy</a></li>
+            <li><a href="index.html">Terms & Conditons</a></li>
+          </ul>
+        </div>
+        <div class="news_letter">
+          <h3>Support</h3>
+          <input type="email" style="border-radius: 5px;" placeholder="Enter your Email...">
+          <h3>Follow Us</h3>
+          <div class="icon_container">
+            <div class="icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./contactuspage.js"></script>
+</body>
+
+</html>

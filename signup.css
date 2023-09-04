@@ -1,0 +1,101 @@
+body{
+    background: linear-gradient( #025464, #F8F1F1) ;
+    /* background-image: url("mara-conan-design-O_6dZUyxezo-unsplash.jpg"); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    button {
+      background-color: #E57C23;
+      color: white;
+      padding: 10px 16px;
+      margin: 8px 130px;
+      border: none;
+      cursor: pointer;
+      width: 50%;
+      opacity: 0.9;
+    }
+    
+    button:hover {
+      opacity:1;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    a{
+      color:#333;
+      text-decoration: none;
+    }
+    /*Nav Bar*/
+#navbar{
+  background:#E57C23;
+  color:#fff;
+  overflow:auto;
+}
+
+#navbar a{
+  color:#fff
+}
+
+#navbar h1{
+  float:left;
+  padding-top:20px;
+  padding-left: 20px;
+}
+
+#navbar ul{
+  list-style:none;
+  float:right;
+}
+
+#navbar ul li {
+float:left;
+}
+
+#navbar ul li a{
+  display:block;
+  padding:20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current{
+  background:#e8aa42;
+  color:#f8f1f1;
+}
+footer {
+  background-color: #e8aa42;
+}
+.link_lists h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-left: 35px;
+  color:#025454;
+}
+.link_lists ul {
+  list-style: none;
+}
+.link_lists ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.news_letter h3 {
+  margin-bottom: 10px;
+  color:#025454;
+}
+.news_letter input {
+  padding: 5px 40px;
+  margin-bottom: 10px;
+}
+.footer_container {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.icon_container {
+  display: flex;
+  gap: 15px;
+  font-size: 30px;
+}

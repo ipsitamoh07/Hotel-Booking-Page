@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta ch:₹et="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <script src="https://kit.fontawesome.com/3f0d53040b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bookings.css">
+    <link rel="icon" href="photos/Location.png">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+        <div class="container">
+                <h1 class="logo"><a href="index.html"><i class="fa-solid fa-location-dot" style="color: #025464;"></i> BnB</a></h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="current" href="bookings.html">Bookings</a></li>
+                    <li><a href="finalabtus.html">About Us</a></li>
+                    <li><a href="contactuspage.html">Contact Us</a></li>
+                    <li><a href="signin.html"><i class="fa-regular fa-user"></i> Login</a></li>
+                    <li><a href="" onclick="logout()"> <i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                </ul>
+              </div>
+            </nav> 
+      </header>
+      <section class="booked">
+        <div id="userbooked">
+
+        </div>
+      </section>
+      <br>
+      <section class="booking">
+        <div class="booking_list">
+            <div class="hotel1">
+                <div class="hotel_img">
+                    <a href="photos/(1).jpg"><img src="photos/hotel-j-p-international.jpg" alt="Honeymoon"></a>
+                </div>
+                <div class="hotel_des">
+                    <h2>Honeymoon Suite</h2>
+                    <!--<tag><a href="https://goo.gl/maps/2s7P4iwQgr7uJfeEA">1,CBD, Maharaja Surajmal Road, near Yamuna Sports Complex,, 110032 New Delhi, India</a></tag>-->
+                    <p>Rating:<i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i> 2.7k Reviews</p>
+                    <p>Amenities: <i class="fa-solid fa-person-swimming" style="color: #259d4f;"></i> Outersor swimming pool
+                      <i class="fa-solid fa-wifi" style="color: #259d4f;"></i> Free WiFi
+                      <i class="fa-solid fa-plane" style="color: #259d4f;"></i> Airport shuttle
+                      <i class="fa-solid fa-dumbbell" style="color: #259d4f;"></i> Fitness centre
+                      <i class="fa-solid fa-square-parking" style="color: #259d4f;"></i> Free parking
+                      <i class="fa-solid fa-bell-concierge" style="color: #259d4f;"></i> 24-hour front desk
+                      <i class="fa-solid fa-spa" style="color: #259d4f;"></i> Spa and wellness centre
+                      <i class="fa-solid fa-mug-hot" style="color: #259d4f;"></i> Tea/coffee maker in all rooms
+                      <i class="fa-solid fa-martini-glass" style="color: #259d4f;" ></i> Bar
+                      <i class="fa-solid fa-bread-slice" style="color: #259d4f;"></i> Very good breakfast
+                    </p>  
+                  </div>
+                <div class="hotel_btn">
+                  <h2>Price:₹7599</h2>
+                  <button onclick="bill()">Book</button>
+                </div>
+            </div><br><hr><br>
+            <div class="hotel2">
+                <div class="hotel_img">
+                    <a href="photos/room02 (1).jpg"> <img src="photos/room02 (1).jpg" alt="Premium"></a>
+                </div>
+                <div class="hotel_des">
+                    <h2>Premium Room</h2>
+                    <!--<tag><a href="https://goo.gl/maps/QSJsxPR4DSzVnwAu5">Plot No 3, District Centre, Sector 10, Dwarka, Dwarka, 110075 New Delhi, India</a></tag>-->
+                    <p>Rating:<i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i> 3.1k Reviews</p>
+                    <p>Amenities: <i class="fa-solid fa-person-swimming" style="color: #259d4f;"></i> Outersor swimming pool
+                      <i class="fa-solid fa-wifi" style="color: #259d4f;"></i> Free WiFi
+                      <i class="fa-solid fa-plane" style="color: #259d4f;"></i> Airport shuttle
+                      <i class="fa-solid fa-dumbbell" style="color: #259d4f;"></i> Fitness centre
+                      <i class="fa-solid fa-square-parking" style="color: #259d4f;"></i> Free parking
+                      <i class="fa-solid fa-bell-concierge" style="color: #259d4f;"></i> 24-hour front desk
+                      <i class="fa-solid fa-utensils" style="color: #259d4f;"></i> Restaurant & Bar
+                      <i class="fa-solid fa-ban-smoking" style="color: #259d4f;"></i> Non-smoking rooms
+                      <i class="fa-solid fa-broom" style="color: #259d4f;"></i> Room service
+                      <i class="fa-solid fa-bread-slice" style="color: #259d4f;"></i> Good breakfast</p>
+                  </div>
+                <div class="hotel_btn">
+                  <h2>Price:₹5599</h2>
+                  <button onclick="bill()">Book</button>
+                </div>
+            </div><br><hr><br>
+            <div class="hotel3">
+                <div class="hotel_img">
+                    <a href="photos/room04.jpg"><img src="photos/room04.jpg" alt="Standard"></a>
+                </div>
+                <div class="hotel_des">
+                    <h2>Standard Room </h2>
+                    <!--<tag><a href="https://goo.gl/maps/6uPFiw85HhZMc6uh6">Opposite Apna Bazar, Dhake Colony, J.P. Road, Azad Nagar, Andheri (West), Mumbai-400053,Mumbai, India</a> </tag>-->
+                    <p>Rating:<i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i>1.1K Reviews</p>
+                    <p>Amenities: <i class="fa-solid fa-wifi" style="color: #259d4f;"></i> Free WiFi
+                      <i class="fa-solid fa-square-parking" style="color: #259d4f;"></i> Free parking
+                      <i class="fa-solid fa-utensils" style="color: #259d4f;"></i> Restaurant
+                      <i class="fa-solid fa-ban-smoking" style="color: #259d4f;"></i> Non-smoking rooms
+                      <i class="fa-solid fa-broom" style="color: #259d4f;"></i> Room service
+                      <i class="fa-solid fa-bell-concierge" style="color: #259d4f;"></i> 24-hour front desk
+                      <i class="fa-solid fa-mug-hot" style="color: #259d4f;"></i> Tea/coffee maker in all rooms
+                      <i class="fa-solid fa-bread-slice" style="color: #259d4f;"></i> Breakfast</p>
+                </div>
+                <div class="hotel_btn">
+                  <h2>Price:₹2999</h2>
+                  <button onclick="bill()">Book</button>
+                </div>
+            </div><br><br>
+            <!--<div class="hotel4">
+                <div class="hotel_img">
+                    <a href="photos/252005217.jpg"><img src="photos/252005217.jpg" alt="Novotel Mumbai Juhu Beach"></a>
+                </div>
+                <div class="hotel_des">
+                    <h2>Novotel Mumbai Juhu Beach</h2>
+                    <tag><a href="https://goo.gl/maps/Kn4SSZj2UppDm2jf6"> Juhu Beach, Maharastra, Juhu, 400049 Mumbai, India </a></tag>
+                    <p>Rating:<i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star-half" style="color: goldenrod;"></i> 6.0k Reviews</p>
+                    <p>Amenities: <i class="fa-solid fa-person-swimming" style="color: #259d4f;"></i> Outersor swimming pool
+                      <i class="fa-solid fa-wifi" style="color: #259d4f;"></i> Free WiFi
+                      <i class="fa-solid fa-square-parking" style="color: #259d4f;"></i> Free parking
+                      <i class="fa-solid fa-dumbbell" style="color: #259d4f;"></i> Fitness centre</p>
+                      <p>
+                      <i class="fa-solid fa-mug-hot" style="color: #259d4f;"></i> Tea/coffee maker in all rooms
+                      <i class="fa-solid fa-martini-glass" style="color: #259d4f;" ></i> Bar
+                      <i class="fa-solid fa-umbrella-beach" style="color: #259d4f;"></i> Beachfront
+                      <i class="fa-solid fa-bread-slice" style="color: #259d4f;"></i> Breakfast</p>
+                </div>
+                <div class="hotel_btn">
+                  <h2>Price:₹9999</h2>
+                  <button onclick="bill()">Book</button>
+                </div>
+            </div><br><hr><br>-->
+            <!--<div class="hotel5">
+                <div class="hotel_img">
+                    <a href="photos/153057592.jpg"> <img src="photos/153057592.jpg" alt="Gokulam Grand Hotel & Spa Bangalore"></a>
+                </div>
+                <div class="hotel_des">
+                    <h2>Gokulam Grand Hotel & Spa Bangalore</h2>
+                    <tag><a href="https://goo.gl/maps/cANmG7ocHdvxcELc9">Gokula Extension, HMT Road (near BEL circle), 560054 Bangalore, India</a> </tag>
+                    <p>Rating:<i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star-half" style="color: goldenrod;"></i> 4.8k Reviews</p>
+                    <p>Amenities: <i class="fa-solid fa-person-swimming" style="color: #259d4f;"></i> Inersor swimming pool
+                      <i class="fa-solid fa-wifi" style="color: #259d4f;"></i> Free WiFi
+                      <i class="fa-solid fa-square-parking" style="color: #259d4f;"></i> Free parking
+                      <i class="fa-solid fa-dumbbell" style="color: #259d4f;"></i> Fitness centre
+                      <p><i class="fa-solid fa-utensils" style="color: #259d4f;"></i> Restaurant & Bar
+                      <i class="fa-solid fa-spa" style="color: #259d4f;"></i> Spa and wellness centre
+                      <i class="fa-solid fa-mug-hot" style="color: #259d4f;"></i> Tea/coffee maker in all rooms
+                      <i class="fa-solid fa-bread-slice" style="color: #259d4f;"></i> Good breakfast</p>
+                
+                  </div>
+                <div class="hotel_btn">
+                  <h2>Price:₹5999</h2>
+                  <button onclick="bill()">Book</button>
+                </div>
+            </div><br><hr><br>-->
+            <!--<div class="hotel6">
+                <div class="hotel_img">
+                    <a href="photos/278273077.jpg"> <img src="photos/278273077.jpg" alt="Bhagini Icon Premier Hotel Bangalore"></a>
+                </div>
+                <div class="hotel_des">
+                    <h2>Bhagini Icon Premier Hotel </h2>
+                    <tag><a href="https://goo.gl/maps/BxWmfq12hDSD9NDs7"> #57/1A Outer Ring Road, Devarabisanahalli Village, Bellandur , 560103 Bangalore, India</a></tag>>
+                    <p>Rating:<i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i>897 Reviews</p>
+                    <p>Amenities: <i class="fa-solid fa-person-swimming" style="color: #259d4f;"></i> Inersor swimming pool
+                      <i class="fa-solid fa-wifi" style="color: #259d4f;"></i> Free WiFi
+                      <i class="fa-solid fa-square-parking" style="color: #259d4f;"></i> Free parking
+                      <i class="fa-solid fa-dumbbell" style="color: #259d4f;"></i> Fitness centre</p>
+                      <p><i class="fa-solid fa-utensils" style="color: #259d4f;"></i> Restaurant & Bar
+                      <i class="fa-solid fa-broom" style="color: #259d4f;"></i> Room service
+                      <i class="fa-solid fa-mug-hot" style="color: #259d4f;"></i> Tea/coffee maker in all room
+                      <i class="fa-solid fa-bread-slice" style="color: #259d4f;"></i> Good breakfast</p>
+                  </div>
+                <div class="hotel_btn">
+                  <h2>Price:₹25999</h2>
+                  <button onclick="bill()">Book</button>
+                </div>
+            </div><br><hr><br>-->
+            <!--<div class="hotel7">
+                <div class="hotel_img">
+                    <a href="photos/374987469.jpg"> <img src="photos/374987469.jpg" alt="Ronnie's Studio Apartment Goa"></a>
+                </div>
+                <div class="hotel_des">
+                    <h2>Ronnie's Studio Apartment</h2>
+                    <tag><a href="https://goo.gl/maps/cgpRKRxoEcdtk5ey6">Unnamed Road Near clove restaurant, 403511 Saligao, India</a></tag>
+                    <p>Rating:<i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star-half" style="color: goldenrod;"></i> 3.9k Reviews </p>
+                    <p>Amenities: <i class="fa-solid fa-person-swimming" style="color: #259d4f;"></i> Inersor swimming pool
+                      <i class="fa-solid fa-square-parking" style="color: #259d4f;"></i> Free parking
+                      <i class="fa-solid fa-wifi" style="color: #259d4f;"></i> Free WiFi
+                      <i class="fa-solid fa-spa" style="color: #259d4f;"></i> Spa and wellness centre
+                      <i class="fa-solid fa-ban-smoking" style="color: #259d4f;"></i> Non-smoking rooms</p>
+                  </div>
+                <div class="hotel_btn">
+                  <h2>Price:₹5899</h2>
+                  <button onclick="bill()">Book</button>
+                </div>
+            </div><br><hr><br>-->
+            <!--<div class="hotel8">
+                <div class="hotel_img">
+                   <a href="photos/327229428.jpg"> <img src="photos/327229428.jpg" alt="Alvorada Resort Goa"></a>
+                </div>
+                <div class="hotel_des">
+                    <h2>Alvorada Resort Goa</h2>
+                    <tag><a href="https://goo.gl/maps/9z5Sn54oS1Npv4UA6">Bhati Wax Museum, next to Areia de Goa, , Baga Calangute, Calangute - Arpora Rd, , 403516 Arpora, India</a></tag>
+                    <p>Rating:<i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i><i class="fa-solid fa-star" style="color: goldenrod;"></i> 7.14k Reviews</p>
+                    <p>Amenities: <i class="fa-solid fa-person-swimming" style="color: #259d4f;"></i> Outersor swimming pool <i class="fa-solid fa-square-parking" style="color: #259d4f;"></i> Free parking <i class="fa-solid fa-broom" style="color: #259d4f;"></i> Room service</p> 
+                    <p><i class="fa-solid fa-utensils" style="color: #259d4f;"></i> Restaurant & Bar <i class="fa-solid fa-bread-slice" style="color: #259d4f;"></i> Breakfast</p>
+                </div>
+                <div class="hotel_btn">
+                  <h2>Price:₹7899</h2>
+                  <button onclick="bill()">Book</button>
+                </div>
+            </div><br><hr><br>-->
+        </div>
+      </section>
+      <hr>
+      <footer>
+        <div class="footer_container container">
+          <div class="footer_logo">
+            <h1 class="logo"><a href="index.html"><i class="fa-solid fa-location-dot" style="color: #025464;"></i> BnB</a></h1>
+          </div>
+          <div class="link_lists">
+            <h3>Download</h3>
+            <ul>
+              <li><a href="https://play.google.com/apps?hl=en">Andriod App</a></li>
+              <li><a href="https://www.apple.com/app-store/">iOS App</a></li>
+              <li><a href="https://azure.microsoft.com/en-in/products/app-service/web/">Web App</a></li>
+              <li><a href="Contactus.html">Company Policy</a></li>
+            </ul>
+          </div>
+          <div class="link_lists">
+            <h3>Help & Support</h3>
+            <ul>
+              <li><a href="finalabtus.html">FAQs</a></li>
+              <li><a href="finalabtus.html">About Us</a></li>
+              <li><a href="index.html">Privacy Policy</a></li>
+              <li><a href="index.html">Terms & Conditons</a></li>
+            </ul>
+          </div>
+          <div class="news_letter">
+            <h3>Support</h3>
+            <input type="email" style="border-radius: 5px;" placeholder="Enter your Email...">
+            <h3>Follow Us</h3>
+            <div class="icon_container">
+              <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="bookings.js"></script>
+</body>
+</html>
